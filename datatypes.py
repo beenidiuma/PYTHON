@@ -143,9 +143,64 @@ print(subjects)
 numbers = {1,2,2,3,3,4}
 print(numbers)
 
+#dictonaries in python
+student = {"name" : "uma", "marks" :98, "sub" : "python"}
+print(student.keys())
+print(student.values())
+print(student.items())
 
+#access elements in die
+print(student["name"])
+print(student["age"])
+print(student["course"])
 
+#change values in dictionary
+student["age"] = 11
+print(student["age"])
 
+#add new data to a dictionary
+student["city"] = "vijayawada"
+print(student)
+
+#remove data
+student.pop("city")
+print(student)
+
+#get() returns the value of specified key
+print(student.get("name"))
+
+#update() updates the value of the specified key
+student.update({"age":18})
+
+#popitem() removes the last inserted key-value pair
+student ={
+    "name": "uma",
+    "age": "17",
+    "course": "python"
+}
+student.popitem()
+
+#setdefault
+student = {"name": "uma"}
+student.setdefault("age",17)
+print(student)
+
+#clear method
+student.clear()
+print(student)
+
+#copy method
+student = {
+    "name" :"uma",
+    "age" :17
+}  
+
+new_student = student.copy()
+print(new_student)
+
+#order of evaluation
+result = 2+13*2
+print(result)
 
 
 
